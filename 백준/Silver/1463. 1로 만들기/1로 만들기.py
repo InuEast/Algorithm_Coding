@@ -12,5 +12,4 @@ for i in range(2, N+1):
     if i%3==0: # 3의 배수인 경우에만 처리
         dp[i] = min(dp[i], dp[i//3]+1)
         
-ans = dp[N]
-print(ans)
+print(dp[N])
